@@ -251,8 +251,7 @@ def start_attack(user_id, target, port, duration):
 def handle_attack_button(message):
     user_id = str(message.chat.id)
     if user_id in allowed_user_ids:
-        bot.send_message(message.chat.id, "⚠️𝐔𝐒𝐀𝐆𝐄: 𝐂𝐋𝐈𝐂𝐊 👉🚀𝐀𝐭𝐭𝐚𝐜𝐤 <𝐈𝐏> <𝐏𝐎𝐑𝐓> <𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍>
-𝐄𝐗𝐀𝐌𝐏𝐋𝐄- 𝟐𝟎.𝟐𝟑𝟓.𝟓𝟏.𝟏𝟖𝟐 𝟐𝟑𝟖𝟎𝟔 𝟔𝟎")
+        bot.send_message(message.chat.id, "⚠️𝐔𝐒𝐀𝐆𝐄: 𝐂𝐋𝐈𝐂𝐊 👉🚀𝐀𝐭𝐭𝐚𝐜𝐤 <𝐈𝐏> <𝐏𝐎𝐑𝐓> <𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍>")
         bot.register_next_step_handler(message, handle_attack_details)
     else:
         bot.send_message(message.chat.id, "🚫 𝗨𝗻𝗮𝘂𝘁𝗼𝗿𝗶𝘀𝗲𝗱 𝗔𝗰𝗰𝗲𝘀𝘀! 🚫\n\nOops! It seems like you don't have permission to use the Attack command. To gain access and unleash the power of attacks, you can:\n\n👉 @TOXICVENOMNO1 Contact an Admin or the Owner for approval.\n🌟 Become a proud supporter and purchase approval.\n💬 Chat with an admin now and level up your experience!\n\nLet's get you the access you need!")
